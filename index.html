@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=style, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="background">
+            <span >
+                <center>
+                    <H1 class="heading">IMAGE GALLERY</H1>
+                </center>
+            </span>
+            <section>   
+                <div id="images">
+                    <figure>
+                    <img class="pic" src="flowers-yellow-small.jpg" onmouseover="sliding(this)">
+                    <figcaption>Beautiful yellow flower</figcaption>
+                </figure>
+                <figure>
+                    <img class="pic" src="flowers-pink-small.jpg" onmouseover="sliding(this)">
+                    <figcaption>stunning pink flower</figcaption>
+                </figure>
+                <figure>
+                    <img class="pic" src="flowers-purple-small.jpg" onmouseover="sliding(this)">
+                    <figcaption>Delicate purple blooms</figcaption>
+                </figure>
+                <figure>
+                    <img class="pic" src="flowers-white-small.jpg" onmouseover="sliding(this)">
+                    <figcaption>White flowers with blue background and white petals.</figcaption>
+                </figure>
+                </div>
+            </section>
+            <aside>
+                <div class="main1">
+                    <img id="main" class="pic2" src="">
+                    <br>
+                </div>
+            </aside>
+        </div>
+        <script>
+            var main = document.getElementById("main");
+
+            function sliding(small) {
+                main.src = small.src
+            }
+
+
+        </script>
+
+
+    </body>
+
+</html>

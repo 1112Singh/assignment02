@@ -1,0 +1,58 @@
+* {
+    margin: 1%;
+    padding: 0%;
+}
+
+img {
+    width: 100px;
+    cursor: pointer;
+}
+
+#main {
+    width: 700px;
+    height: 400px;
+    float: inherit;
+}
+
+#images {
+    float: left
+}
+
+.pic {
+    display:block;
+    height: 100px;
+    align-items: flex-start;
+    position: relative;
+    margin: 2%;
+    padding: 5px;
+    object-fit: cover;
+   
+}
+.heading {
+    text-align: center; /* Center the heading text */
+    padding: 20px; /* Add padding around the heading */
+    background-color: rgba(0, 0, 0, 0.5); /* Set a semi-transparent background color for the heading */
+    color: #fff; /* Set the text color of the heading */
+    font-size: 24px; /* Adjust the font size of the heading */
+    text-transform: uppercase; /* Convert the heading text to uppercase */
+  }
+
+.pic :hover{
+    filter: grayscale(100%);  /*Apply grayscale filter to inactive thumbnails*/
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+#background{
+    align-items: center;
+    justify-content: centre;
+
+}
+
+.pic2 {
+    object-fit: cover;
+    height: fit-content;
+    width: fit-content;
+    align-self: auto;
+    float: inherit;
+} 
